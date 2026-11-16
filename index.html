@@ -7,12 +7,16 @@
     <link rel="icon" type="image/svg+xml" href="c:\Users\user\Documents\coffe-icon.svg">
 </head>
 <body>
-    <header>
-        <div class="navbar">
+    <header class="navbar">
+        <div class="logo">
+            <img src="coffe-icon.svg" alt="coffee logo" width="70px" height="70px">
+            <h1>Rest Coffee</h1>
+        </div>
+        <nav class="menu-grup">
             <h1>Menu</h1>
             <h1>Profile</h1>
             <h1>Home</h1>
-        </div>
+        </nav>
     </header>
 </body>
 <style>
@@ -23,12 +27,28 @@
     }
 
     .navbar {
-        background-color: chocolate;
-        padding: 2px 20px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-
+        background-color: #d2691e;
+        padding: 10px 40px;
     }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .menu-grup {
+        display: flex;
+        gap: 30px;
+    }
+
+    .menu-grup h1, .logo h2 {
+        margin: 0;
+        font-size: 20px;
+    }
+    
 </style>
 </html>
